@@ -1,0 +1,123 @@
+.auth-container,
+.dashboard-container {
+  width: min(960px, 92%);
+  margin: 36px auto;
+}
+
+.auth-container {
+  max-width: 460px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #dbe3f2;
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 16px;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.top-bar p {
+  margin-top: 4px;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid #c7d2e6;
+  border-radius: 8px;
+  padding: 10px 12px;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: #114eb3;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.secondary-button {
+  background: #5b677d;
+}
+
+.danger-button {
+  background: #b02020;
+}
+
+.row-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 10px;
+}
+
+.grievance-list {
+  display: grid;
+  gap: 12px;
+}
+
+.grievance-card {
+  border: 1px solid #d7dfef;
+  border-radius: 10px;
+  padding: 14px;
+  background: #f9fbff;
+}
+
+.grievance-card h3 {
+  margin: 0 0 8px;
+}
+
+.meta-line {
+  color: #334155;
+  font-size: 14px;
+}
+
+.auth-footer {
+  margin-top: 14px;
+}
+
+.error-text {
+  color: #9b1c1c;
+}
+
+.success-text {
+  color: #1f7a1f;
+}
+
+@media (max-width: 700px) {
+  .search-row {
+    grid-template-columns: 1fr;
+  }
+
+  .top-bar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
